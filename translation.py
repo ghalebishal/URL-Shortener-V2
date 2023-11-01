@@ -11,28 +11,14 @@ For example: <code>/batch -100xxx</code>
 I'll handle the rest and get those links shortened or converted in a short time! 💪
 """
 
-START_MESSAGE = """Hi, {}😊
+START_MESSAGE = """Hi there {} 
 
-I can help you to create short links directly from your Kajilinks account. 
+Send me a link or post and I'll shorten it for you!
 
-🔑 Set or Change your kajilinks API Token.
-Step 1 - Visit - https://kajilinks.xyz/member/tools/api
-Step 2 - Copy - Your API Token
-Step 3 - Send - /shortener_api YOUR_API_TOKEN
-e.g - /api 13a85c74aaqwerdierughewb572f08db234
+To learn more about what I can do, just type /help.
 
-🔗 Short Single or Bulk Links.
-Once the API is set Successfully you're Ready to GO!
-Just start sending links or post containing the links.
-Bot will short all the links directly from your Kajilinks account using the API token provided by you. 
-
-You can control me by sending these commands:
-/shortener_api {YOUR_API_TOKEN} - Set or Change your Kajilinks API Token
-/help ❓ If you need help.
-/Header Your Custom Header.
-/footer Your Custom Footer.
-
-Thank you 😊
+Method: {}
+Shortener website: {}
 """
 
 HELP_MESSAGE = """Hey there! My name is {firstname} and I'm a link convertor and shortener bot here to make your work easier and help you earn more 💰.
@@ -130,7 +116,18 @@ ABOUT_REPLY_MARKUP = InlineKeyboardMarkup(
     ]
 )
 
-START_MESSAGE_REPLY_MARKUP = 
+START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup(
+    [
+        [
+            InlineKeyboardButton("Help", callback_data="help_command"),
+            InlineKeyboardButton("About", callback_data="about_command"),
+        ],
+        [
+            InlineKeyboardButton("Method", callback_data="method_command"),
+            InlineKeyboardButton("Close", callback_data="delete"),
+        ],
+    ]
+)
 
 METHOD_REPLY_MARKUP = InlineKeyboardMarkup(
     [
