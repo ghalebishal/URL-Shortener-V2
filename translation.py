@@ -16,7 +16,7 @@ START_MESSAGE = """Hi, {}😊
 I can help you to create short links directly from your Kajilinks account. 
 
 🔑 Set or Change your kajilinks API Token.
-Step 1 - Visit - https://gplinks.in/member/tools/api
+Step 1 - Visit - https://kajilinks.xyz/member/tools/api
 Step 2 - Copy - Your API Token
 Step 3 - Send - /shortener_api YOUR_API_TOKEN
 e.g - /api 13a85c74aaqwerdierughewb572f08db234
