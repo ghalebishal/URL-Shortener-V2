@@ -11,14 +11,28 @@ For example: <code>/batch -100xxx</code>
 I'll handle the rest and get those links shortened or converted in a short time! 💪
 """
 
-START_MESSAGE = """Hi there {} 
+START_MESSAGE = """Hi, {}😊
 
-Send me a link or post and I'll shorten it for you!
+I can help you to create short links directly from your Kajilinks account. 
 
-To learn more about what I can do, just type /help.
+🔑 Set or Change your kajilinks API Token.
+Step 1 - Visit - https://gplinks.in/member/tools/api
+Step 2 - Copy - Your API Token
+Step 3 - Send - /shortener_api YOUR_API_TOKEN
+e.g - /api 13a85c74aaqwerdierughewb572f08db234
 
-Method: {}
-Shortener website: {}
+🔗 Short Single or Bulk Links.
+Once the API is set Successfully you're Ready to GO!
+Just start sending links or post containing the links.
+Bot will short all the links directly from your Kajilinks account using the API token provided by you. 
+
+You can control me by sending these commands:
+/shortener_api {YOUR_API_TOKEN} - Set or Change your Kajilinks API Token
+/help ❓ If you need help.
+/Header Your Custom Header.
+/footer Your Custom Footer.
+
+Thank you 😊
 """
 
 HELP_MESSAGE = """Hey there! My name is {firstname} and I'm a link convertor and shortener bot here to make your work easier and help you earn more 💰.
